@@ -5,7 +5,7 @@ package com.alan.effectivejava.chapter11;
  * @des TODO
  * @date 2018/12/5/005 17:05
  **/
-public class PhoneNumber {
+public class PhoneNumber implements Cloneable {
 
     private final short areaCode;
     private final short prefix;
@@ -32,7 +32,7 @@ public class PhoneNumber {
         if (o == this) {
             return true;
         }
-        if (!(o instanceof com.alan.effectivejava.chapter9.PhoneNumber)) {
+        if (!(o instanceof PhoneNumber)) {
             return false;
         }
         PhoneNumber pn = (PhoneNumber) o;
@@ -54,7 +54,31 @@ public class PhoneNumber {
         return result;
     }
 
+    @Override
+    public String toString() {
+        return "PhoneNumber{" +
+                "areaCode=" + areaCode +
+                ", prefix=" + prefix +
+                ", lineNumber=" + lineNumber +
+                '}';
+    }
+
+    @Override
+    public PhoneNumber clone() {
+        try {
+            return (PhoneNumber) super.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new AssertionError();
+        }
+    }
+
     public static void main(String[] args) {
+
+        PhoneNumber a = new PhoneNumber(707, 867, 5309);
+        System.out.println("克隆前：" + a.toString());
+        PhoneNumber b = a.clone();
+        System.out.println("克隆后：" + b.toString());
+        System.out.println("判断值是否相等：" + a.equals(b));
 
     }
 
