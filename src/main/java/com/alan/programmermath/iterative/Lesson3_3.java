@@ -32,6 +32,10 @@ public class Lesson3_3 {
             if (dictionary[middle].equals(wordToFind)) {
                 return true;
             } else {
+                // String.compareTo 按字典顺序比较两个字符串 该比较基于字符串中各个字符的 Unicode 值
+                // 如果按字典顺序此 String 对象位于参数字符串之前，则比较结果为一个负整数;
+                // 如果按字典顺序此 String 对象位于参数字符串之后，则比较结果为一个正整数;
+                // 如果这两个字符串相等，则结果为 0
                 if (dictionary[middle].compareTo(wordToFind) > 0) {
                     right = middle - 1;
                 } else {
