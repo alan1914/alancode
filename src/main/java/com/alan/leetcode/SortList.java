@@ -1,7 +1,5 @@
 package com.alan.leetcode;
 
-import java.util.List;
-
 /**
  * @author stone
  * @des 链表排序
