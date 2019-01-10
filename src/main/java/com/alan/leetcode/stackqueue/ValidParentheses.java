@@ -1,4 +1,4 @@
-package com.alan.leetcode.stack;
+package com.alan.leetcode.stackqueue;
 
 import java.util.Stack;
 
