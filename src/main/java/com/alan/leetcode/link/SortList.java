@@ -1,4 +1,4 @@
-package com.alan.leetcode;
+package com.alan.leetcode.link;
 
 /**
  * @author stone
