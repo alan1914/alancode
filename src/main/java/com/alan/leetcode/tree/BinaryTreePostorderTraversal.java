@@ -1,5 +1,6 @@
 package com.alan.leetcode.tree;
 
+import com.alan.leetcode.util.TreeNode;
 import sun.reflect.generics.tree.Tree;
 
 import java.util.ArrayList;
@@ -10,16 +11,6 @@ import java.util.ArrayList;
  * @date 2019/1/8/008 15:49
  **/
 public class BinaryTreePostorderTraversal {
-
-    static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
-    }
 
     public static ArrayList<Integer> postorderTraversal(TreeNode root) {
 

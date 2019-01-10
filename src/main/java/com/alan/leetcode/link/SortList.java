@@ -1,21 +1,13 @@
 package com.alan.leetcode.link;
 
+import com.alan.leetcode.util.ListNode;
+
 /**
  * @author stone
  * @des 链表排序
  * @date 2019/1/3/003 14:07
  **/
 public class SortList {
-    static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-            next = null;
-        }
-
-    }
 
     /**
      * 找到中点

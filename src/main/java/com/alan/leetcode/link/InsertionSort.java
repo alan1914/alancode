@@ -1,6 +1,6 @@
 package com.alan.leetcode.link;
 
-import java.util.List;
+import com.alan.leetcode.util.ListNode;
 
 /**
  * @author stone
@@ -8,17 +8,6 @@ import java.util.List;
  * @date 2019/1/4/004 16:42
  **/
 public class InsertionSort {
-
-    static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-            next = null;
-        }
-
-    }
 
     public static ListNode insertionSortList(ListNode head) {
 
