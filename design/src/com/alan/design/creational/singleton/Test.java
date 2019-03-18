@@ -1,14 +1,10 @@
 package com.alan.design.creational.singleton;
 
-
-import lombok.extern.slf4j.Slf4j;
-
 /**
  * @author stone
  * @des TODO
  * @date 2018/12/3/003 11:18
  **/
-@Slf4j
 public class Test {
 
 
@@ -22,7 +18,7 @@ public class Test {
         t1.start();
         t2.start();
 
-        log.info("program end");
+        System.out.println("program end");
 
     }
 

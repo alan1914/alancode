@@ -1,13 +1,11 @@
 package com.alan.design.creational.builder.v2;
 
-import lombok.extern.slf4j.Slf4j;
 
 /**
  * @author stone
  * @des TODO
  * @date 2018/11/30/030 10:37
  **/
-@Slf4j
 public class Test {
 
     public static void main(String[] args) {
@@ -27,7 +25,7 @@ public class Test {
 
         int i = 42;
         String s = (i < 40) ? "life" : (i > 50) ? "universe" : "everything";
-        log.info(s);
+        System.out.println(s);
     }
 
 }
