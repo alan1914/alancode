@@ -3,23 +3,23 @@ package com.alan.design.structural.facade;
 public class GiftExchangeService {
 
 
-    private PointPaymentService pointPaymentService;
+    private PointPaymentService pointPaymentService = new PointPaymentService();
 
-    private QualifyService qualifyService;
+    private QualifyService qualifyService = new QualifyService();
 
-    private ShippingService shippingService;
+    private ShippingService shippingService = new ShippingService();
 
-    public void setPointPaymentService(PointPaymentService pointPaymentService) {
-        this.pointPaymentService = pointPaymentService;
-    }
-
-    public void setQualifyService(QualifyService qualifyService) {
-        this.qualifyService = qualifyService;
-    }
-
-    public void setShippingService(ShippingService shippingService) {
-        this.shippingService = shippingService;
-    }
+//    public void setPointPaymentService(PointPaymentService pointPaymentService) {
+//        this.pointPaymentService = pointPaymentService;
+//    }
+//
+//    public void setQualifyService(QualifyService qualifyService) {
+//        this.qualifyService = qualifyService;
+//    }
+//
+//    public void setShippingService(ShippingService shippingService) {
+//        this.shippingService = shippingService;
+//    }
 
 
     public void giftExchange(PointsGift pointsGift){

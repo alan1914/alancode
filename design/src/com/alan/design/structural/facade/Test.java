@@ -7,9 +7,9 @@ public class Test {
 
         GiftExchangeService giftExchangeService = new GiftExchangeService();
 
-        giftExchangeService.setPointPaymentService(new PointPaymentService());
-        giftExchangeService.setQualifyService(new QualifyService());
-        giftExchangeService.setShippingService(new ShippingService());
+//        giftExchangeService.setPointPaymentService(new PointPaymentService());
+//        giftExchangeService.setQualifyService(new QualifyService());
+//        giftExchangeService.setShippingService(new ShippingService());
 
         giftExchangeService.giftExchange(pointsGift);
 
