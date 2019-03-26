@@ -1,4 +1,4 @@
-package com.alan.design.structural.decorator.adapter.objcetadpter;
+package com.alan.design.structural.adapter.objcetadpter;
 
 public class Adapter implements Target {
 

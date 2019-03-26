@@ -1,4 +1,4 @@
-package com.alan.design.structural.decorator.adapter.classadapter;
+package com.alan.design.structural.adapter.classadapter;
 
 public class Adaptee {
 

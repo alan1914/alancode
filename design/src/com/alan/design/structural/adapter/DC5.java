@@ -1,4 +1,4 @@
-package com.alan.design.structural.decorator.adapter;
+package com.alan.design.structural.adapter;
 
 public interface DC5 {
 
