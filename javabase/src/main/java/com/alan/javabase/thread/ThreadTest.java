@@ -2,12 +2,12 @@ package com.alan.javabase.thread;
 
 public class ThreadTest {
 
-    private static void attack(){
+    private static void attack() {
         System.out.println("Fight");
         System.out.println("Current Thread is: " + Thread.currentThread().getName());
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Thread t = new Thread(new Runnable() {
             @Override
             public void run() {

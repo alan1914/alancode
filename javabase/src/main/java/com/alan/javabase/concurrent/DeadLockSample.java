@@ -1,4 +1,4 @@
-package com.alan.javabase.concurrent;
+package com.alan.javabase.thread.concurrent;
 
 /**
  * @author stone
